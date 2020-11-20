@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -8,18 +9,19 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text('สวัสดี'),
-          ],
-        ),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body: Container(
+          height: size.height,
+          width: size.width,
+          child: Stack(alignment: Alignment.center, children: <Widget>[
+            Positioned(
+                child: Lottie.asset(
+                    'assets/lotties/38287-scanning-searching-for-data.json',
+                    width: 350),
+                bottom: 0),
+          ])), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
