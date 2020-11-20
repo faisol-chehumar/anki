@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
           primarySwatch:
               createMaterialColor(Theme.of(context).colorScheme.primaryDefault),
           visualDensity: VisualDensity.adaptivePlatformDensity,
+          fontFamily: 'Sukhumvit',
         ),
         initialRoute: '/',
         onGenerateRoute: (setttings) {

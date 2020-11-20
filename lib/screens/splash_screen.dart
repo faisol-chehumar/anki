@@ -16,7 +16,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Text(
               'You have pushed the button this many times:',
             ),
-            Text('xxx'),
+            Text('สวัสดี'),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
