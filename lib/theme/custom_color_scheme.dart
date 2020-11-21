@@ -7,4 +7,6 @@ extension CustomerColorScheme on ColorScheme {
   Color get primaryDefault => brightness == Brightness.light
       ? const Color(_kournikova)
       : const Color(_darkColor);
+
+  Color get blackDefault => Colors.black87;
 }
