@@ -29,9 +29,10 @@ class MyApp extends StatelessWidget {
           switch (setttings.name) {
             case '/':
               return PageTransition(
-                  child: SplashScreen(), type: PageTransitionType.fade);
+                child: SplashScreen(),
+                type: PageTransitionType.fade,
+              );
               break;
-
             default:
               return null;
           }

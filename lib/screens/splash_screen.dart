@@ -18,8 +18,9 @@ class _SplashScreenState extends State<SplashScreen> {
           child: Stack(alignment: Alignment.center, children: <Widget>[
             Positioned(
                 child: Lottie.asset(
-                    'assets/lotties/38287-scanning-searching-for-data.json',
-                    width: 350),
+                  'assets/lotties/38287-scanning-searching-for-data.json',
+                  width: 350,
+                ),
                 bottom: 0),
           ])), // This trailing comma makes auto-formatting nicer for build methods.
     );
