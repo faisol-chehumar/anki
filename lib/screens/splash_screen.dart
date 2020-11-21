@@ -31,26 +31,12 @@ class _SplashScreenState extends State<SplashScreen> {
         decoration: BoxDecoration(
           color: Colors.purple.shade50,
         ),
-        child: Stack(alignment: Alignment.center, children: <Widget>[
-          Positioned(
-            child: Text(
-              GlobalConfiguration().getValue('app_title').toUpperCase(),
-              style: TextStyle(
-                fontSize: 50,
-                fontWeight: FontWeight.bold,
-                color: Theme.of(context).colorScheme.blackDefault,
-              ),
-            ),
-            top: size.height * 0.55,
+        child: Center(
+          child: Lottie.asset(
+            'assets/lotties/38287-scanning-searching-for-data.json',
+            width: 350,
           ),
-          Positioned(
-            child: Lottie.asset(
-              'assets/lotties/38287-scanning-searching-for-data.json',
-              width: 350,
-            ),
-            top: size.height * 0.2,
-          ),
-        ]),
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
