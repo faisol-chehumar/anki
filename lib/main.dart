@@ -33,6 +33,12 @@ class MyApp extends StatelessWidget {
                 type: PageTransitionType.fade,
               );
               break;
+            case '/welcome':
+              return PageTransition(
+                child: WelcomeScreen(),
+                type: PageTransitionType.fade,
+              );
+              break;
             default:
               return null;
           }
