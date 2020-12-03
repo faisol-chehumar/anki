@@ -22,13 +22,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(
-                GlobalConfiguration().getValue('app_title').toUpperCase(),
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.bold,
-                  color: Theme.of(context).colorScheme.textPrimary,
-                ),
+              TitleText(
+                text: GlobalConfiguration().getValue('app_title').toUpperCase(),
               ),
             ],
           ),
