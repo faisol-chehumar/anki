@@ -1,9 +1,8 @@
 import 'dart:async';
-import 'package:global_configuration/global_configuration.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
 
-import 'package:anki/theme/theme.dart';
+import 'package:anki/theme/index.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -15,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-      Duration(seconds: 2),
+      Duration(seconds: 4),
       () => Navigator.pushReplacementNamed(context, '/welcome'),
     );
   }
@@ -29,11 +28,11 @@ class _SplashScreenState extends State<SplashScreen> {
         height: size.height,
         width: size.width,
         decoration: BoxDecoration(
-          color: Colors.purple.shade50,
+          color: Theme.of(context).colorScheme.bgPrimary,
         ),
         child: Center(
           child: Lottie.asset(
-            'assets/lotties/38287-scanning-searching-for-data.json',
+            'assets/lotties/27637-welcome.json',
             width: 350,
           ),
         ),

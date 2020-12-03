@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:global_configuration/global_configuration.dart';
 import 'package:page_transition/page_transition.dart';
 
-import 'package:anki/theme/theme.dart';
-import 'package:anki/constants/constants.dart';
-import 'package:anki/screens/screens.dart';
+import 'package:anki/theme/index.dart';
+import 'package:anki/constants/index.dart';
+import 'package:anki/screens/index.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         title: GlobalConfiguration().getValue('app_title').toUpperCase(),
         theme: ThemeData(
           primarySwatch:
-              createMaterialColor(Theme.of(context).colorScheme.primaryDefault),
+              createMaterialColor(Theme.of(context).colorScheme.bgPrimary),
           visualDensity: VisualDensity.adaptivePlatformDensity,
           fontFamily: 'Sukhumvit',
         ),
