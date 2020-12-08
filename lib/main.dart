@@ -23,7 +23,13 @@ class MyApp extends StatelessWidget {
               createMaterialColor(Theme.of(context).colorScheme.bgPrimary),
           visualDensity: VisualDensity.adaptivePlatformDensity,
           fontFamily: 'Sukhumvit',
+          brightness: Brightness.light,
         ),
+        darkTheme: ThemeData(
+          brightness: Brightness.dark,
+          /* dark theme settings */
+        ),
+        themeMode: ThemeMode.light,
         initialRoute: '/',
         onGenerateRoute: (setttings) {
           switch (setttings.name) {
