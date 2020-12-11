@@ -17,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
       Duration(seconds: 4),
-      () => ExtendedNavigator.root.push(Routes.welcomeScreen),
+      () => ExtendedNavigator.root.replace(Routes.welcomeScreen),
     );
   }
 
