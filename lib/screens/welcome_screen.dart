@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:global_configuration/global_configuration.dart';
+import 'package:auto_route/auto_route.dart';
 
 import 'package:anki/theme/index.dart';
 import 'package:anki/components/index.dart';
+import 'package:anki/routes/router.gr.dart';
 
 class WelcomeScreen extends StatefulWidget {
   @override
@@ -25,6 +27,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               TitleText(
                 text: GlobalConfiguration().getValue('app_title').toUpperCase(),
               ),
+              FlatButton(
+                  child: Text('xxx'),
+                  onPressed: () {
+                    ExtendedNavigator.root.push(Routes.mainScreen);
+                  }),
             ],
           ),
         ),

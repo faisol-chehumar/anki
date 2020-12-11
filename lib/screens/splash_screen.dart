@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'package:lottie/lottie.dart';
 import 'package:flutter/material.dart';
+import 'package:auto_route/auto_route.dart';
 
 import 'package:anki/theme/index.dart';
+import 'package:anki/routes/router.gr.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -15,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
       Duration(seconds: 4),
-      () => Navigator.pushReplacementNamed(context, '/welcome'),
+      () => ExtendedNavigator.root.push(Routes.welcomeScreen),
     );
   }
 
